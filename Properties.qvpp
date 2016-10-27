@@ -1,0 +1,42 @@
+<!--
+/*****************************************************************/
+/* INFO:  This is a QlikView object extension that allows you to */
+/*        add a left animated menu on the screen. You can manage */
+/*        the menu items by a JSON.                              */
+/*                                                               */
+/* AUTHOR: Diego Bertolini                                       */
+/*	  info@diegobertolini.com                                */
+/*        http://www.diegobertolini.com                          */
+/*                                                               */
+/* DATE:  22/08/2016                                             */
+/*****************************************************************/
+-->
+
+<div class="ToolWindow-MainBody" avq="foldOutMenu:." style="overflow: visible !important; float: left;">
+	<div class="prop-accordion" avq="accordion:.">
+		<h3 class="prop-h3 accordion-shadow"><a href="#">Menu Creator</a></h3>
+		
+		<div class="prop-grid_container accordion-shadow-enabler" style="overflow:auto;">
+			<br clear='all'/>
+			<div>
+				<div style='width:100%;' avq='prop_editexpression:.Chart.Text.0.Content'></div>
+			</div>
+			<br clear='all'/>
+			<div class='prop-grid_clear prop-grid_prepend-1'>
+				<b>Expression content:</b>
+			<br/>
+			<i>Set the Titles, Url and Separators of the menu items to be loaded. You can leave the Separator field empty. You need to reload WebView to see the menu changes.</i>
+			</div>
+    	</div>
+		
+    	<h3 class="prop-h3 accordion-shadow" avq="activeAccordionHeader:.:GenericPresentationFoldout.qvpp"><a href="#">Presentation</a></h3>
+		<div class="prop-grid_container accordion-shadow-enabler" avq="panel::Layout.qvpp"></div>
+
+		<h3 class="prop-h3 accordion-shadow" avq="activeAccordionHeader::PropertiesCaptionFoldout.qvpp"><a href="#">Caption</a></h3>
+		<div class="prop-grid_container accordion-shadow-enabler" avq="panel::Caption.qvpp"></div>
+
+		<h3 class="prop-h3 accordion-shadow" avq="activeAccordionHeader:.:PropertiesOptionsFoldout.qvpp"><a href="#">Options</a></h3>
+		<div class="prop-grid_container accordion-shadow-enabler" avq="panel::Options.qvpp"></div>
+	</div>
+	
+</div>

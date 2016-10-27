@@ -1,0 +1,30 @@
+﻿<!--
+/*****************************************************************/
+/* INFO:  This is a QlikView object extension that allows you to */
+/*        add a left animated menu on the screen. You can manage */
+/*        the menu items by a JSON.                              */
+/*                                                               */
+/* AUTHOR: Diego Bertolini                                       */
+/*	  info@diegobertolini.com                                */
+/*        http://www.diegobertolini.com                          */
+/*                                                               */
+/* DATE:  22/08/2016                                             */
+/*****************************************************************/
+-->
+<?xml version="1.0" encoding="utf-8"?> 
+<ExtensionObject Label="Menu Creator" Path="MenuCreator" Description="Create your own menu">
+	<Initiate Name="Caption.Text" Value="Menu Creator" /> 
+    <Initiate Name="Chart.BgColor.ColorHex" value="#ffffff" />
+	<Initiate Name="Caption.Allow.Minimize" value="0" />
+	<Initiate Name="Caption.Allow.Maximize" value="0" />
+	<Initiate Name="Caption.Icon.Print" value="0" />
+	<Initiate Name="Caption.Icon.SendToExcel" value="0" />
+
+	<Initiate Name="Chart.Text.1.Content" value="1" />
+  	<Initiate Name="Chart.Text.2.Content" value="2" />
+  	<Initiate Name="Chart.Text.3.Content" value="3" />
+
+	<Text Expression="{&quot;menu&quot;: [{&quot;separator&quot;: &quot;Author&quot;,&quot;content&quot;: [{&quot;title&quot;: &quot;Diego Bertolini&quot;,&quot;url&quot;: &quot;http://www.diegobertolini.com&quot;}]},{&quot;separator&quot;: &quot;Information&quot;,&quot;content&quot;: [{&quot;title&quot;: &quot;Qlik&quot;,&quot;url&quot;: &quot;http://www.qlik.com&quot;},{&quot;title&quot;: &quot;Community&quot;,&quot;url&quot;: &quot;https://community.qlik.com&quot;}]}]}"/>
+
+  	<PropertiesPage Version="11" File="Properties.qvpp" />
+</ExtensionObject>
